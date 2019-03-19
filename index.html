@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>suvrvey_form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container-fluid">
+<h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+    Use of Online Social Networking
+  </p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Ocupation :</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="job">Part Time Job</option>
+      <option value="job">Job Seeker</option>
+      <option value="job">Retired</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <br>
+<!--QUESTION-->    
+   <fieldset> 
+   <span class="question-number notraslate">
+      1
+      <span class="question-dot">.</span>
+      <span>      
+    </span>
+      <span class="user-generated notraslate" >
+      Which of the following social networking websites do you currently have an account with? (Check all that apply)        
+      </span>
+      
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Facebook</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Reddit</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">WhatsApp</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Instagram</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">YouTube</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Twitter</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Snapchat</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Other (please specify)</label></li>
+        </ul>
+      </div>
+     </fieldset>
+     <br>
+<fieldset>     
+<span class="question-number notraslate">
+      2
+      <span class="question-dot">.</span>
+      <span>      
+    </span>
+      <span class="user-generated notraslate" >
+       In a typical week, how likely are you to use social networking websites?        
+      </span>
+      
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="radio" class="userRatings">Extremely likely</label></li>
+          <li class="radio"><input name="prefer" value="2" type="radio" class="userRatings">Very likely</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="radio" class="userRatings">Moderately likely</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="radio" class="userRatings">Slightly likely</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="radio" class="userRatings">Not at all likely</label></li>
+        </ul>
+      </div>
+</fieldset>
+  <br>
+  <fieldset>
+  <span class="question-number notraslate">
+      3
+      <span class="question-dot">.</span>
+      <span>      
+    </span>
+      <span class="user-generated notraslate" >
+      In a typical week, which of the following social networking websites do you use most often?        
+      </span>
+      
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Facebook</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Reddit</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">WhatsApp</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Instagram</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">YouTube</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Twitter</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Snapchat</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Other (please specify)</label></li>
+        </ul>
+      <div class="coment-text">
+        <textarea id="comments" class="input-field coment_end" style="resize:vertical;" name="comment" placeholder="Specify with your comment here..."></textarea>
+      </div>
+      </div>
+</fieldset>
+    <br>
+    <fieldset>
+   <span class="question-number notraslate">
+      4
+      <span class="question-dot">.</span>
+      <span>      
+    </span>
+      <span class="user-generated notraslate" >
+In a typical week, about how much time do you spend using social networking websites?      
+      </span>
+      
+   <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Hours: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Enter Hours">
+      </div>
+    </div>
+        <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Minutes: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Enter minutes">
+      </div>
+    </div>
+</fieldset>
+      <br>
+      <fieldset>
+   <span class="question-number notraslate">
+      5
+      <span class="question-dot">.</span>
+      <span>      
+    </span>
+      <span class="user-generated notraslate" >
+About how many "friends" do you currently have on social networking websites?     
+      </span>
+      
+   <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Numbers of friends: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="10000000" class="input-field" placeholder="Enter Number of friends">
+      </div>
+</fieldset>
+<br>        
+<fieldset>
+   <span class="question-number notraslate">
+      6
+      <span class="question-dot">.</span>
+      <span>      
+    </span>
+      <span class="user-generated notraslate" >
+About how many of your "friends" on social networking websites have you met in person?        
+      </span>
+      
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">All of them</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Most of them</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">About half of them</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">A few of them</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">None of them</label></li>
+        </ul>
+      </div>
+</fieldset>
+ <br> 
+<fieldset>
+   <span class="question-number notraslate">
+      7
+      <span class="question-dot">.</span>
+      <span>      
+    </span>
+      <span class="user-generated notraslate" >
+If you could use only one of the following social networking services, which would you use?      
+      </span>
+      
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="radio" class="userRatings">Facebook</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="radio" class="userRatings">WhatsApp</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="radio" class="userRatings">Reddit</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="radio" class="userRatings">Instagram</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="radio" class="userRatings">YouTube</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="radio" class="userRatings">Twitter</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="radio" class="userRatings">Snapchat</label></li>
+        </ul>
+      </div>
+ </fieldset>
+  <br>
+ <fieldset>  
+  <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="coment-text">
+        <textarea id="comments" class="input-field coment_end" style="resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+  
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</fieldset>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
